@@ -1,0 +1,74 @@
+<body class="init">
+<!-- The preloader -->
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+    </div>
+</div>
+
+<!-- Start Header -->
+<header id="head">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-xs-3">
+                <div class="logo">
+                    <h1>Express Grill</h1>
+                </div>
+            </div>
+
+            <!-- Nav menu Toggle -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nectarine-nav-menu1" aria-expanded="false" aria-controls="nectarine-nav-menu1">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i> Men&uacute;
+            </button>
+
+            <div class="col-md-9 col-xs-9">
+                <nav id="nav-menu" class="navbar navbar-default">
+                    <div class="collapse navbar-collapse" id="nectarine-nav-menu1">
+                        <ul class="nav nav-pills text-right">
+                            <li><a  routerLink="/home" routerLinkActive="active">Home</a></li>
+                            <li><a  routerLink="/menu" routerLinkActive="active">Menu</a></li>
+                            <li><a  routerLink="/about" routerLinkActive="active">About</a></li>
+                            <li><a  routerLink="/contact" routerLinkActive="active">Contact</a></li>
+                            <!--<li><a  routerLink="/services" routerLinkActive="active">Services</a></li>-->
+                            <!--<li><a  routerLink="/blog" routerLinkActive="active">Blog</a></li>-->
+                            <!--<li><a  routerLink="/analytics" routerLinkActive="active">Analytics</a></li>-->
+                            <li class="call-to-menu"><a class="scrollto" routerLink="/table" routerLinkActive="active">Book a table</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<!-- Start Footer -->
+<footer id="foot" class="content-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="text-center">
+                    <div class="logo">
+                        <h1>Express Grill</h1>
+                    </div>
+                    <ul class="contacts">
+                        <li>A node JS App</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <ul class="social text-center">
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-tumblr"></i></a></li>
+                    </ul>
+</footer>
+
+</body>
